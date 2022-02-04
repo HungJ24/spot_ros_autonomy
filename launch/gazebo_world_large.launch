@@ -77,7 +77,7 @@
         <remap from="scan" to="right/scan/laserscan"/>
     </node>
 
-    <node name="spot_obst" pkg="spot_ros_autonomy" type="$(find spot_ros_autonomy)/scripts/obs_avo_test.py" output="screen" required="true">    
+    <node name="spot_obst" pkg="spot_ros_autonomy" type="$(find spot_ros_autonomy)/scripts/obstacle_avoidance.py" output="screen" required="true">    
         <param name="joy" value="$(arg joy)" />    
     </node>
 
