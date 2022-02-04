@@ -9,7 +9,7 @@ from geometry_msgs.msg import Twist
 from champ_msgs.msg import Pose as PoseLite
 from geometry_msgs.msg import Pose as Pose
 import tf
-import numpy as np
+
 
 class ObstacleAvoidance:
     def __init__(self):
@@ -153,7 +153,7 @@ class ObstacleAvoidance:
         twist.angular.z = (not data.buttons[4]) * data.axes[0] * self.turn
         self.velocity_publisher.publish(twist)
 
-        '''body_pose_lite = PoseLite()
+        body_pose_lite = PoseLite()
         body_pose_lite.x = 0
         body_pose_lite.y = 0
         body_pose_lite.roll = (not data.buttons[5]) *-data.axes[3] * 0.349066
@@ -174,7 +174,7 @@ class ObstacleAvoidance:
         body_pose.orientation.z = quaternion[2]
         body_pose.orientation.w = quaternion[3]
 
-        self.pose_publisher.publish(body_pose)'''
+        self.pose_publisher.publish(body_pose)
        
     # Obstacle Avoidance functions   
     def obstacle_avoidance(self):
