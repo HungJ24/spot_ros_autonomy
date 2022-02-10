@@ -4,7 +4,7 @@
     <arg name="lite"               default="false" />  <!-- Set to true if you're using CHAMP lite version. Only useful for microcontrollers. -->
     <arg name="use_sim_time"       default="true" />
     <arg name="ros_control_file"   default="$(find spot_ros_autonomy)/config/ros_control/ros_control.yaml" /> <!-- Path to ROS Control configurations. Do not touch. -->
-    <arg name="gazebo_world"       default="$(find spot_ros_autonomy)/worlds/gaze_test_world_large.world" /> <!-- Path to Gazebo world you want to load. -->
+    <arg name="gazebo_world"       default="$(find spot_ros_autonomy)/worlds/gaze_world_large_2.world" /> <!-- Path to Gazebo world you want to load. -->
     <arg name="gui"                default="true"/>
     <arg name="world_init_x"       default="7.4" /> <!-- X Initial position of the robot in Gazebo World -->
     <arg name="world_init_y"       default="-8.0" /> <!-- Y Initial position of the robot in Gazebo World -->
