@@ -26,6 +26,6 @@ install(FILES
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
   )
 
-install(DIRECTORY config launch maps scripts worlds
+install(DIRECTORY config launch maps worlds
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
