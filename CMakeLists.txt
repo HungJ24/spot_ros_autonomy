@@ -5,6 +5,12 @@ find_package(catkin REQUIRED COMPONENTS)
 
 catkin_package()
 
+catkin_install_python(PROGRAMS
+   obstacle_avoidance.py
+   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )

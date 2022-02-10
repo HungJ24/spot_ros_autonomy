@@ -1,6 +1,6 @@
 <launch>
     <arg name="robot_name"         default="/"/> <!-- Change this for namespacing. -->
-    <arg name="rviz"               default="true"/> <!-- Set to true to run rviz in parallel. -->
+    <arg name="rviz"               default="false"/> <!-- Set to true to run rviz in parallel. -->
     <arg name="lite"               default="false" />  <!-- Set to true if you're using CHAMP lite version. Only useful for microcontrollers. -->
     <arg name="use_sim_time"       default="true" />
     <arg name="ros_control_file"   default="$(find spot_ros_autonomy)/config/ros_control/ros_control.yaml" /> <!-- Path to ROS Control configurations. Do not touch. -->
@@ -77,7 +77,7 @@
         <remap from="scan" to="right/scan/laserscan"/>
     </node>
 
-    <node name="spot_obst" pkg="spot_ros_autonomy" type="$(find spot_ros_autonomy)/scripts/obstacle_avoidance.py" output="screen" required="true">    
+    <node name="spot_obst" pkg="spot_ros_autonomy" type="obstacle_avoidance.py" output="screen" required="true">    
         <param name="joy" value="$(arg joy)" />    
     </node>
 
