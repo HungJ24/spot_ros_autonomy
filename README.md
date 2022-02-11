@@ -2,11 +2,15 @@
 ## UON - MSc COMP4097 Enhanced MSc Research Project in Computer Science (Artificial Intelligence) 2021/2022
 
 ## Supplementary Material Submission 11/02/2022
-Work created by the author:
+Work created/modified by the author:
 
+Created:
 - All gazebo_world_*.launch files
 - All ~/world/gaze_world_*.world files
 - ~/obstacle_avoidance.py
+
+Modified
+- ~/spot.urdf
 
 If building this project please follow instructions for installation of Champ by (https://github.com/chvmp/champ)
 
