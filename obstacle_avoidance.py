@@ -57,35 +57,6 @@ class ObstacleAvoidance:
 
         self.obst_close = False
 
-    def front_depth_callback (self, msg):
-        print(len(msg.ranges))
-        self.front_depth = min(msg.ranges[200:599])
-        self.left_front_depth = min(msg.ranges[600:799])
-        self.right_front_depth = min(msg.ranges[0:199])
-
-        self.front_closest_obstacle = min(self.front_depth,self.left_front_depth,self.right_front_depth)
-        
-    def rear_depth_callback (self, msg):
-        self.rear_depth = min(msg.ranges[200:599])
-        self.left_rear_depth = min(msg.ranges[0:199])
-        self.right_rear_depth = min(msg.ranges[600:799])
-
-        self.rear_closest_obstacle = min(self.rear_depth,self.left_rear_depth,self.right_rear_depth)
-
-
-    def left_depth_callback (self, msg):
-        self.left_depth = min(msg.ranges[200:599])
-        self.left_front_depth = min(msg.ranges[0:199])
-        self.left_rear_depth = min(msg.ranges[600:799])
-
-        self.left_closest_obstacle = min(self.left_depth,self.left_front_depth,self.left_rear_depth)
-
-    def right_depth_callback (self, msg):
-        self.right_depth = min(msg.ranges[200:599])
-        self.right_front_depth = min(msg.ranges[600:799])
-        self.right_rear_depth = min(msg.ranges[0:199])
-
-        self.right_closest_obstacle = min(self.right_depth,self.right_front_depth,self.right_rear_depth)
 
     def front_depth_callback (self, msg):
         self.front_depth = min(msg.ranges[213:426])
