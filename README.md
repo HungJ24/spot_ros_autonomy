@@ -2,6 +2,19 @@
 ## UON - MSc COMP4097 Enhanced MSc Research Project in Computer Science (Artificial Intelligence) 2021/2022
 
 ## Supplementary Material Submission 11/02/2022
+Work created by the author:
+
+- All gazebo_world_*.launch files
+- All ~/world/gaze_world_*.world files
+- ~/obstacle_avoidance.py
+
+If building this project please follow instructions for installation of Champ by (https://github.com/chvmp/champ)
+
+Clone this project repo to ~/workspace/src/
+
+Run catkin_make & source devel/setup.bash
+
+Run roslaunch spot_ros_autonomy gazebo_world_large_1.launch (A connected joystick is required)
 
 # Project Description
 This repository contains work for simulation of the quadruped robot SPOT, (Robot by Boston Dynamics) (URDF by Clearpath Robotics).
