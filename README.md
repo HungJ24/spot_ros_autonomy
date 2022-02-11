@@ -15,20 +15,24 @@ ROS - Melodic
 
 Gazebo - ver. 9
 
-Tested on System Hardware:
+# Tested on System Hardware:
 
-System 1
+## System 1
 
   CPU - AMD 3950x @ 4.3GHz
+  
   GPU - Nvidia RTX 2080 Super
+  
   RAM - 32GB
   
   Real-Time-Factor Avg: 1
   
-System 2
+## System 2
 
   CPU - Intel i7 11800H @ 4.6GHz
+  
   GPU - Nvidia RTX 3050ti (Mobile)
+  
   RAM - 32GB
   
   Real-Time-Factor Avg: 1
