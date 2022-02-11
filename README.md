@@ -1,7 +1,7 @@
 # spot_ros_autonomy
-UON - MSc COMP4097 Enhanced MSc Research Project in Computer Science (Artificial Intelligence) 2021/2022
+## UON - MSc COMP4097 Enhanced MSc Research Project in Computer Science (Artificial Intelligence) 2021/2022
 
-Supplementary Material Submission 11/02/2022
+## Supplementary Material Submission 11/02/2022
 
 # Project Description
 This repository contains work for simulation of the quadruped robot SPOT, (Robot by Boston Dynamics) (URDF by Clearpath Robotics).
